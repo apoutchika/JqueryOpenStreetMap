@@ -10,6 +10,6 @@ http://jqueryopenstreetmap.julienphilippon.fr
 
 # Licence
 
-see `Licence`
+see https://github.com/apoutchika/JqueryOpenStreetMap/blob/master/Licence
 
 If you use this plugin, you accept the licence of OpenLayers (See http://openlayers.org/dev/license.txt)
