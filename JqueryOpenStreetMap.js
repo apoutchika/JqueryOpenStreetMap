@@ -7,7 +7,13 @@
 
 
 (function($) {
-    
+
+    // Redirect error of function name
+    $.fn.openStreeMap = function(p) {
+        $(this).openStreetMap(p);
+        return this;
+    }
+
     $.fn.openStreetMap = function (p)
     {
 	if (p == undefined)
