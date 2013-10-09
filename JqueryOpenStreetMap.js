@@ -19,7 +19,7 @@
     {
         var mapId = 0;
         $(this).map(function(index, el){
-            if ($(el).id == undefined) 
+            if ($(el).attr('id') == undefined) 
             {
                 while ($('#ApoutchikaJqueryOpenStreetMap'+mapId).length != 0) 
                 {

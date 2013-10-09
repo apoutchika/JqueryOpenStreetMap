@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
         <style type="text/css">
 
-            #Map {
+            #map {
                 width: 400px;
                 height: 400px;
                 margin: 50px auto !important;
@@ -15,7 +15,7 @@
     </head>
     <body>
 
-        <div id="Map"></div>
+        <div id="map"></div>
 
         <!-- The jquery library -->
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -24,13 +24,13 @@
         <script type="text/javascript" src="http://maplib.khtml.org/khtml.maplib/khtml_all.js"></script>
 
         <!-- The pluggin for JqueryOpenStreetMap  -->
-        <script type="text/javascript"  src="JqueryOpenStreetMap.js"></script>
+        <script type="text/javascript"  src="JqueryOpenStreetMap.min.js"></script>
 
         <!-- Manage your map -->
         <script type="text/javascript">
             $(function(){
 
-                $("#Map").openStreetMap({
+                $("#map").openStreetMap({
                     center: {lat: 46.5, lng: 2.5}, // Set the middle of the map
                     zoom: 4, // Zoom level (1 to 18)
                     zoombar: true, // true or false
