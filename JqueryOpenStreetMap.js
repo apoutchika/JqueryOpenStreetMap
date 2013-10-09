@@ -8,7 +8,7 @@
 
 (function($) {
     
-    $.fn.openStreeMap = function (p)
+    $.fn.openStreetMap = function (p)
     {
 	if (p == undefined)
 	{
