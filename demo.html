@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>JqueryOpenStreetMap Demo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+        <style type="text/css">
+
+            #Map {
+                width: 400px;
+                height: 400px;
+                margin: 50px auto !important;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div id="Map"></div>
+
+        <!-- The jquery library -->
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+        <!-- The OpenStreetMap pluggin (with khtml) -->
+        <script type="text/javascript" src="http://maplib.khtml.org/khtml.maplib/khtml_all.js"></script>
+
+        <!-- The pluggin for JqueryOpenStreetMap  -->
+        <script type="text/javascript"  src="JqueryOpenStreetMap.js"></script>
+
+        <!-- Manage your map -->
+        <script type="text/javascript">
+            $(function(){
+
+                $("#Map").openStreetMap({
+                    center: {lat: 46.5, lng: 2.5}, // Set the middle of the map
+                    zoom: 4, // Zoom level (1 to 18)
+                    zoombar: true, // true or false
+                    markers: [
+                        {
+                            pos: {lat: 48.856613, lng: 2.352229}, // Position of the marker (Required)
+                            title: 'Paris', // Title (when mouse is over)
+                            infobox: {
+                                content: '<h1>Paris !</h1><p>Welcome...</p>', // Infobox of this marker
+                                open: true // Open on load the map?
+                            }
+                        },
+                        {
+                            pos: {lat: 43.296469, lng: 5.369789}, // second marker
+                        },
+
+                        //... and more
+                    ]
+                });
+
+            });
+        </script>
+    </body>
+</html>
